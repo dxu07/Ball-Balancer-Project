@@ -1,4 +1,4 @@
-# ME-405-Term-Project
+# ME-305-Term-Project
 Project by Jake Lesher and Daniel Xu
 
 This repository holds code and other supplemental materials for the ME 305 Term Project.
