@@ -1,0 +1,195 @@
+\hypertarget{class_closed_loop_1_1_closed_loop}{}\doxysection{Closed\+Loop.\+Closed\+Loop Class Reference}
+\label{class_closed_loop_1_1_closed_loop}\index{ClosedLoop.ClosedLoop@{ClosedLoop.ClosedLoop}}
+
+
+Contains all of the functions that are responsible for closed-\/loop PID control.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_closed_loop_1_1_closed_loop_a4cea6bab4bd9d8aa4dec477adce9f984}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em A function that initializes the controller driver. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_closed_loop_1_1_closed_loop_a96fd2cb8408678d12b71f38d8a5e7788}{update\+\_\+inner}} (self, eul\+\_\+ang, dt, ang\+\_\+vel, ref)
+\begin{DoxyCompactList}\small\item\em Updates the duty cycle under closed-\/loop control. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_closed_loop_1_1_closed_loop_aecba6e07c8d5c64374faa4d4e8520adc}{update\+\_\+outer}} (self, eul\+\_\+ang, dt, ang\+\_\+vel, ref, contact)
+\begin{DoxyCompactList}\small\item\em Updates the duty cycle under closed-\/loop control. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_closed_loop_1_1_closed_loop_a6e228035c78c2e3061352509b9d939e4}{set\+\_\+gain\+\_\+inner}} (self, Kp, KI, Kd)
+\begin{DoxyCompactList}\small\item\em Sets the gain and velocity reference values. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_closed_loop_1_1_closed_loop_a877d1469bd7e2c7c7d6997330df8c87c}{set\+\_\+gain\+\_\+outer}} (self, Kp, KI, Kd)
+\begin{DoxyCompactList}\small\item\em Sets the gain and velocity reference values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a27c1a208ad5663bd96bcc907582c2df0}\label{class_closed_loop_1_1_closed_loop_a27c1a208ad5663bd96bcc907582c2df0}} 
+{\bfseries max\+Duty}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_ac17d59b10bda008753c76a5a22e167f9}\label{class_closed_loop_1_1_closed_loop_ac17d59b10bda008753c76a5a22e167f9}} 
+{\bfseries min\+Duty}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a0f7007df079a709080e67a722ff9c438}\label{class_closed_loop_1_1_closed_loop_a0f7007df079a709080e67a722ff9c438}} 
+{\bfseries int\+\_\+error}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_af41b418163e064d711d8746842545443}\label{class_closed_loop_1_1_closed_loop_af41b418163e064d711d8746842545443}} 
+{\bfseries int\+\_\+error\+\_\+o}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_ab27b0d10e9db1c6c49faae4e8d136ab7}\label{class_closed_loop_1_1_closed_loop_ab27b0d10e9db1c6c49faae4e8d136ab7}} 
+{\bfseries ang\+\_\+vel}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a99de4c39f2b8abd97ef889d08c461c69}\label{class_closed_loop_1_1_closed_loop_a99de4c39f2b8abd97ef889d08c461c69}} 
+{\bfseries eul\+\_\+ang}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a03cb49e4f6960197ed0b64c7409c560e}\label{class_closed_loop_1_1_closed_loop_a03cb49e4f6960197ed0b64c7409c560e}} 
+{\bfseries time\+\_\+diff}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a251bd12741155bcc3291ed26b64d473f}\label{class_closed_loop_1_1_closed_loop_a251bd12741155bcc3291ed26b64d473f}} 
+{\bfseries ref}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a0acdcd788e7b98826d0a7d3f678228ae}\label{class_closed_loop_1_1_closed_loop_a0acdcd788e7b98826d0a7d3f678228ae}} 
+{\bfseries error}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_aa990ca1acc3265c1b5989f8b57859415}\label{class_closed_loop_1_1_closed_loop_aa990ca1acc3265c1b5989f8b57859415}} 
+{\bfseries deriv\+\_\+error}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a0feb53671b8c8e4b863f755d796b3d6f}\label{class_closed_loop_1_1_closed_loop_a0feb53671b8c8e4b863f755d796b3d6f}} 
+{\bfseries Duty}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a56d1163a13d4872345830364d331e57c}\label{class_closed_loop_1_1_closed_loop_a56d1163a13d4872345830364d331e57c}} 
+{\bfseries ang\+\_\+vel\+\_\+o}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a12766d8073179019f4bafe1ddd3c1b97}\label{class_closed_loop_1_1_closed_loop_a12766d8073179019f4bafe1ddd3c1b97}} 
+{\bfseries eul\+\_\+ang\+\_\+o}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a4c049859a78495d77a2900459b73de57}\label{class_closed_loop_1_1_closed_loop_a4c049859a78495d77a2900459b73de57}} 
+{\bfseries time\+\_\+diff\+\_\+o}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a2285adf191f06c18402a5180f679118a}\label{class_closed_loop_1_1_closed_loop_a2285adf191f06c18402a5180f679118a}} 
+{\bfseries ref\+\_\+o}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a7831568aac3c2c24ee455a732587fcf0}\label{class_closed_loop_1_1_closed_loop_a7831568aac3c2c24ee455a732587fcf0}} 
+{\bfseries error\+\_\+o}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_af4873a4cf80da92b6fa2ed6832a38cce}\label{class_closed_loop_1_1_closed_loop_af4873a4cf80da92b6fa2ed6832a38cce}} 
+{\bfseries deriv\+\_\+error\+\_\+o}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a28a1119ec2ace038ae8f3e3ae9bf8e9a}\label{class_closed_loop_1_1_closed_loop_a28a1119ec2ace038ae8f3e3ae9bf8e9a}} 
+{\bfseries Duty\+\_\+o}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a6cb4a55f40297b18268ac496f495e02d}\label{class_closed_loop_1_1_closed_loop_a6cb4a55f40297b18268ac496f495e02d}} 
+{\bfseries Kp\+\_\+i}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_ae1a776b40f64ecbddf9a84b40c459182}\label{class_closed_loop_1_1_closed_loop_ae1a776b40f64ecbddf9a84b40c459182}} 
+{\bfseries KI\+\_\+i}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_ac13551254dd016b033bed60e68dd0ec2}\label{class_closed_loop_1_1_closed_loop_ac13551254dd016b033bed60e68dd0ec2}} 
+{\bfseries Kd\+\_\+i}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_ac9f06a1fa9a9b9743db8a840422f1f71}\label{class_closed_loop_1_1_closed_loop_ac9f06a1fa9a9b9743db8a840422f1f71}} 
+{\bfseries Kp\+\_\+o}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_adc0740944cf6523bd88e72d2eb90e748}\label{class_closed_loop_1_1_closed_loop_adc0740944cf6523bd88e72d2eb90e748}} 
+{\bfseries KI\+\_\+o}
+\item 
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_aeee88590e5c0cb7a3ec28b215724dfaf}\label{class_closed_loop_1_1_closed_loop_aeee88590e5c0cb7a3ec28b215724dfaf}} 
+{\bfseries Kd\+\_\+o}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains all of the functions that are responsible for closed-\/loop PID control. 
+
+This class is used to calculate a value based on a closed loop PID controller architecture. This calculated value can be anything, as long as the correct inputs are given, making this driver very reusable. Separate functions were used for the inner and outer control loops to easily differentiate the variables from each other. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a4cea6bab4bd9d8aa4dec477adce9f984}\label{class_closed_loop_1_1_closed_loop_a4cea6bab4bd9d8aa4dec477adce9f984}} 
+\index{ClosedLoop.ClosedLoop@{ClosedLoop.ClosedLoop}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!ClosedLoop.ClosedLoop@{ClosedLoop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Closed\+Loop.\+Closed\+Loop.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+A function that initializes the controller driver. 
+
+This fucntion sets the limits for closed-\/loop duty cycles. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a6e228035c78c2e3061352509b9d939e4}\label{class_closed_loop_1_1_closed_loop_a6e228035c78c2e3061352509b9d939e4}} 
+\index{ClosedLoop.ClosedLoop@{ClosedLoop.ClosedLoop}!set\_gain\_inner@{set\_gain\_inner}}
+\index{set\_gain\_inner@{set\_gain\_inner}!ClosedLoop.ClosedLoop@{ClosedLoop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{set\_gain\_inner()}{set\_gain\_inner()}}
+{\footnotesize\ttfamily def Closed\+Loop.\+Closed\+Loop.\+set\+\_\+gain\+\_\+inner (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Kp,  }\item[{}]{KI,  }\item[{}]{Kd }\end{DoxyParamCaption})}
+
+
+
+Sets the gain and velocity reference values. 
+
+This function passed the user-\/selected values for gain and Vref and passes them to the update() function. 
+\begin{DoxyParams}{Parameters}
+{\em Kp} & is the share of the user-\/requested proportional gain. \\
+\hline
+{\em Ki} & is the share of the user-\/requested integral gain. \\
+\hline
+{\em omega\+\_\+ref} & is the velocity requested by the user in task\+User. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a877d1469bd7e2c7c7d6997330df8c87c}\label{class_closed_loop_1_1_closed_loop_a877d1469bd7e2c7c7d6997330df8c87c}} 
+\index{ClosedLoop.ClosedLoop@{ClosedLoop.ClosedLoop}!set\_gain\_outer@{set\_gain\_outer}}
+\index{set\_gain\_outer@{set\_gain\_outer}!ClosedLoop.ClosedLoop@{ClosedLoop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{set\_gain\_outer()}{set\_gain\_outer()}}
+{\footnotesize\ttfamily def Closed\+Loop.\+Closed\+Loop.\+set\+\_\+gain\+\_\+outer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Kp,  }\item[{}]{KI,  }\item[{}]{Kd }\end{DoxyParamCaption})}
+
+
+
+Sets the gain and velocity reference values. 
+
+This function passed the user-\/selected values for gain and Vref and passes them to the update() function. 
+\begin{DoxyParams}{Parameters}
+{\em Kp} & is the share of the user-\/requested proportional gain. \\
+\hline
+{\em Ki} & is the share of the user-\/requested integral gain. \\
+\hline
+{\em omega\+\_\+ref} & is the velocity requested by the user in task\+User. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_a96fd2cb8408678d12b71f38d8a5e7788}\label{class_closed_loop_1_1_closed_loop_a96fd2cb8408678d12b71f38d8a5e7788}} 
+\index{ClosedLoop.ClosedLoop@{ClosedLoop.ClosedLoop}!update\_inner@{update\_inner}}
+\index{update\_inner@{update\_inner}!ClosedLoop.ClosedLoop@{ClosedLoop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{update\_inner()}{update\_inner()}}
+{\footnotesize\ttfamily def Closed\+Loop.\+Closed\+Loop.\+update\+\_\+inner (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{eul\+\_\+ang,  }\item[{}]{dt,  }\item[{}]{ang\+\_\+vel,  }\item[{}]{ref }\end{DoxyParamCaption})}
+
+
+
+Updates the duty cycle under closed-\/loop control. 
+
+This function is in charge of actually using the gains to assign a duty cycle to a motor to minimize error. 
+\begin{DoxyParams}{Parameters}
+{\em omega\+\_\+meas} & is the current velocity of the motor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Duty percentage of one motor is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_closed_loop_1_1_closed_loop_aecba6e07c8d5c64374faa4d4e8520adc}\label{class_closed_loop_1_1_closed_loop_aecba6e07c8d5c64374faa4d4e8520adc}} 
+\index{ClosedLoop.ClosedLoop@{ClosedLoop.ClosedLoop}!update\_outer@{update\_outer}}
+\index{update\_outer@{update\_outer}!ClosedLoop.ClosedLoop@{ClosedLoop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{update\_outer()}{update\_outer()}}
+{\footnotesize\ttfamily def Closed\+Loop.\+Closed\+Loop.\+update\+\_\+outer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{eul\+\_\+ang,  }\item[{}]{dt,  }\item[{}]{ang\+\_\+vel,  }\item[{}]{ref,  }\item[{}]{contact }\end{DoxyParamCaption})}
+
+
+
+Updates the duty cycle under closed-\/loop control. 
+
+This function is in charge of actually using the gains to assign a duty cycle to a motor to minimize error. 
+\begin{DoxyParams}{Parameters}
+{\em omega\+\_\+meas} & is the current velocity of the motor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Duty percentage of one motor is returned. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_closed_loop_8py}{Closed\+Loop.\+py}}\end{DoxyCompactItemize}

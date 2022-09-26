@@ -1,0 +1,291 @@
+\hypertarget{classtouchpanel_1_1_touch_panel}{}\doxysection{touchpanel.\+Touch\+Panel Class Reference}
+\label{classtouchpanel_1_1_touch_panel}\index{touchpanel.TouchPanel@{touchpanel.TouchPanel}}
+
+
+The class for initializing, reading, filtering, and calibrating the 3-\/wire resistive touch panel.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtouchpanel_1_1_touch_panel_a7ff471473e0f99eb54bb82d8242d6301}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Initializes the touch panel, creating necessary objects and variables. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpanel_1_1_touch_panel_ab5f832db5998bc8124f3f6f8a6e0406e}{x\+Scan}} (self)
+\begin{DoxyCompactList}\small\item\em Scans the touch panel for the x-\/position of the ball. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpanel_1_1_touch_panel_a395563525ae913291d036055c6a2bd7b}{y\+Scan}} (self)
+\begin{DoxyCompactList}\small\item\em Scans the touch panel for the y-\/position of the ball. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpanel_1_1_touch_panel_a920a804c1f6b2bf9c97337793456bbb1}{z\+Scan}} (self)
+\begin{DoxyCompactList}\small\item\em Scans the touch panel to see if the ball is making contact. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpanel_1_1_touch_panel_a67537f8164e31eb37e2311437fea2d2c}{Scan}} (self)
+\begin{DoxyCompactList}\small\item\em Scans the touch panel for the total position of the ball. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpanel_1_1_touch_panel_a0baa5cad49b76a25300c9f248803747f}{Filter}} (self, ADC\+\_\+\+Data)
+\begin{DoxyCompactList}\small\item\em An alpha-\/beta filter for removing \char`\"{}noise\char`\"{} from the ADC position measurements. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpanel_1_1_touch_panel_ae46b58b137cadde160617680fc30d35d}{Calibrate}} (self)
+\begin{DoxyCompactList}\small\item\em This function walks the user through the steps to calibrate the touchpanel. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpanel_1_1_touch_panel_a5e309a701b7a242e51bbaaafec753a6d}{Beta}} (self)
+\begin{DoxyCompactList}\small\item\em This function uses the 5 data points from the calibration procedure to calculate the matrix of calibration coefficients. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpanel_1_1_touch_panel_aabd79ddbb2f239954ea679a938382819}{Read\+\_\+\+Panel}} (self, Beta)
+\begin{DoxyCompactList}\small\item\em This fucntion is a combination of the scan, filter, and calibration fucntions defined earlier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_afaa83f75aea1e96261091b53a05381ad}\label{classtouchpanel_1_1_touch_panel_afaa83f75aea1e96261091b53a05381ad}} 
+{\bfseries Pinym}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a4f9577702c0dfce2feb7f665dd2a0831}\label{classtouchpanel_1_1_touch_panel_a4f9577702c0dfce2feb7f665dd2a0831}} 
+{\bfseries Pinxm}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a40461883ad06d19de5dc532e2d4876dc}\label{classtouchpanel_1_1_touch_panel_a40461883ad06d19de5dc532e2d4876dc}} 
+{\bfseries Pinyp}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_aa113a676f616996bf8d9461bbb7c679c}\label{classtouchpanel_1_1_touch_panel_aa113a676f616996bf8d9461bbb7c679c}} 
+{\bfseries Pinxp}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a44e499ab2b3f2498e15d1f5159473cb6}\label{classtouchpanel_1_1_touch_panel_a44e499ab2b3f2498e15d1f5159473cb6}} 
+{\bfseries contact}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a43e95dc10fc005222ef2d267cc71022b}\label{classtouchpanel_1_1_touch_panel_a43e95dc10fc005222ef2d267cc71022b}} 
+{\bfseries initial\+\_\+time}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a683bcaac5ff7797342b359ce9c22ef82}\label{classtouchpanel_1_1_touch_panel_a683bcaac5ff7797342b359ce9c22ef82}} 
+{\bfseries vx\+\_\+hat}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_abfff43b795467e06b85823839333dee7}\label{classtouchpanel_1_1_touch_panel_abfff43b795467e06b85823839333dee7}} 
+{\bfseries vy\+\_\+hat}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_adea612cac43145ce6d7a82a4a80cac6f}\label{classtouchpanel_1_1_touch_panel_adea612cac43145ce6d7a82a4a80cac6f}} 
+{\bfseries Cal\+\_\+step}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a26bb2ccb8452e4a555a2edb4b8946e7b}\label{classtouchpanel_1_1_touch_panel_a26bb2ccb8452e4a555a2edb4b8946e7b}} 
+{\bfseries Calibrated}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a84d18545a73c696b2365be749943e42a}\label{classtouchpanel_1_1_touch_panel_a84d18545a73c696b2365be749943e42a}} 
+{\bfseries y1\+\_\+print}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a78fb7a042b30263e38d64e707907d96a}\label{classtouchpanel_1_1_touch_panel_a78fb7a042b30263e38d64e707907d96a}} 
+{\bfseries y2\+\_\+print}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_af61746291e593d80ff00c4e4e5dc4c55}\label{classtouchpanel_1_1_touch_panel_af61746291e593d80ff00c4e4e5dc4c55}} 
+{\bfseries y3\+\_\+print}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_add9132d783d78c0468a770efc7d6a93f}\label{classtouchpanel_1_1_touch_panel_add9132d783d78c0468a770efc7d6a93f}} 
+{\bfseries y4\+\_\+print}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_adef213afd16340591bd7f917f993e4fa}\label{classtouchpanel_1_1_touch_panel_adef213afd16340591bd7f917f993e4fa}} 
+{\bfseries y5\+\_\+print}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_ac9a5e822c05f856043d836793ec20544}\label{classtouchpanel_1_1_touch_panel_ac9a5e822c05f856043d836793ec20544}} 
+{\bfseries Y6\+\_\+print}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a855957615af73f571f0bf6f412d784db}\label{classtouchpanel_1_1_touch_panel_a855957615af73f571f0bf6f412d784db}} 
+{\bfseries Y}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_aa0b47ed3c0b5f5dc60758e4c6528a33c}\label{classtouchpanel_1_1_touch_panel_aa0b47ed3c0b5f5dc60758e4c6528a33c}} 
+{\bfseries ym\+ADC}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_ac4e4e82bb3bbc59dd84c5c610042b812}\label{classtouchpanel_1_1_touch_panel_ac4e4e82bb3bbc59dd84c5c610042b812}} 
+{\bfseries xpos}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a40e9b4920d00431b0572a1954015440b}\label{classtouchpanel_1_1_touch_panel_a40e9b4920d00431b0572a1954015440b}} 
+{\bfseries xm\+ADC}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a6bf6297b7a20abd1ab6fc4f694983c65}\label{classtouchpanel_1_1_touch_panel_a6bf6297b7a20abd1ab6fc4f694983c65}} 
+{\bfseries ypos}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_ae07c97531d3475d17bf4f7a60f9787f1}\label{classtouchpanel_1_1_touch_panel_ae07c97531d3475d17bf4f7a60f9787f1}} 
+{\bfseries xp\+ADC}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a3f51c6c20801ba6f13664fe65863de20}\label{classtouchpanel_1_1_touch_panel_a3f51c6c20801ba6f13664fe65863de20}} 
+{\bfseries x\+\_\+hat}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_ad16fbef8c76503337e0a1f566bf61122}\label{classtouchpanel_1_1_touch_panel_ad16fbef8c76503337e0a1f566bf61122}} 
+{\bfseries y\+\_\+hat}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a49dc2c255fe1fc62a802357f964ed940}\label{classtouchpanel_1_1_touch_panel_a49dc2c255fe1fc62a802357f964ed940}} 
+{\bfseries current\+\_\+time}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a64c73adb3ce751be713d3765a7c64e3a}\label{classtouchpanel_1_1_touch_panel_a64c73adb3ce751be713d3765a7c64e3a}} 
+{\bfseries ts}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_ae8f01331896da5ff035b55d5cc64f9cb}\label{classtouchpanel_1_1_touch_panel_ae8f01331896da5ff035b55d5cc64f9cb}} 
+{\bfseries x1}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_aa391deeab5bf15ab8753477513f2c1cd}\label{classtouchpanel_1_1_touch_panel_aa391deeab5bf15ab8753477513f2c1cd}} 
+{\bfseries y1}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a5e097f9282c3e6a0ef25b799d2b03a60}\label{classtouchpanel_1_1_touch_panel_a5e097f9282c3e6a0ef25b799d2b03a60}} 
+{\bfseries x2}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a01c0c4e640c24b7fc1f53f97cefaefa8}\label{classtouchpanel_1_1_touch_panel_a01c0c4e640c24b7fc1f53f97cefaefa8}} 
+{\bfseries y2}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a2260abd4dcadf880024764d56a8a1100}\label{classtouchpanel_1_1_touch_panel_a2260abd4dcadf880024764d56a8a1100}} 
+{\bfseries x3}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_af964a7d2a1f9adddad780964b35d4db8}\label{classtouchpanel_1_1_touch_panel_af964a7d2a1f9adddad780964b35d4db8}} 
+{\bfseries y3}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_af8801761535af82a9a0d22db7dfca926}\label{classtouchpanel_1_1_touch_panel_af8801761535af82a9a0d22db7dfca926}} 
+{\bfseries x4}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_abfef0b98ef5435bb03f1b624497eb9ec}\label{classtouchpanel_1_1_touch_panel_abfef0b98ef5435bb03f1b624497eb9ec}} 
+{\bfseries y4}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a8e914397b8a403d7a52bcbf66d34a142}\label{classtouchpanel_1_1_touch_panel_a8e914397b8a403d7a52bcbf66d34a142}} 
+{\bfseries x5}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_af3936dd5fdc9d5e825082bc509538ae0}\label{classtouchpanel_1_1_touch_panel_af3936dd5fdc9d5e825082bc509538ae0}} 
+{\bfseries y5}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a538fdb9e2474f008842f6dbdae9391d6}\label{classtouchpanel_1_1_touch_panel_a538fdb9e2474f008842f6dbdae9391d6}} 
+{\bfseries X}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a7823c41d35ca1bf976b66ea884cba63c}\label{classtouchpanel_1_1_touch_panel_a7823c41d35ca1bf976b66ea884cba63c}} 
+{\bfseries X\+\_\+T}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a06e411802f1d4552754b91922f696a75}\label{classtouchpanel_1_1_touch_panel_a06e411802f1d4552754b91922f696a75}} 
+{\bfseries Beta}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_abfede1cd1bc1912d34e156a354a2fb45}\label{classtouchpanel_1_1_touch_panel_abfede1cd1bc1912d34e156a354a2fb45}} 
+{\bfseries x\+\_\+cal}
+\item 
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a8ab891399ced4b0bd4f956b1c84c069e}\label{classtouchpanel_1_1_touch_panel_a8ab891399ced4b0bd4f956b1c84c069e}} 
+{\bfseries y\+\_\+cal}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class for initializing, reading, filtering, and calibrating the 3-\/wire resistive touch panel. 
+
+This class is responsible for alll of the basic fucntionality of the touch panel. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a7ff471473e0f99eb54bb82d8242d6301}\label{classtouchpanel_1_1_touch_panel_a7ff471473e0f99eb54bb82d8242d6301}} 
+\index{touchpanel.TouchPanel@{touchpanel.TouchPanel}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!touchpanel.TouchPanel@{touchpanel.TouchPanel}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def touchpanel.\+Touch\+Panel.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Initializes the touch panel, creating necessary objects and variables. 
+
+This function initialzes the touch panel pins, creates a few variables for future use, and creates the Y matrix containing the calibration points. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a5e309a701b7a242e51bbaaafec753a6d}\label{classtouchpanel_1_1_touch_panel_a5e309a701b7a242e51bbaaafec753a6d}} 
+\index{touchpanel.TouchPanel@{touchpanel.TouchPanel}!Beta@{Beta}}
+\index{Beta@{Beta}!touchpanel.TouchPanel@{touchpanel.TouchPanel}}
+\doxysubsubsection{\texorpdfstring{Beta()}{Beta()}}
+{\footnotesize\ttfamily def touchpanel.\+Touch\+Panel.\+Beta (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function uses the 5 data points from the calibration procedure to calculate the matrix of calibration coefficients. 
+
+Using the ADC data from the 5 points tapped on the touch panel, this function calculates the matrix Beta, which contains the calibration coefficients for the panel. \begin{DoxyReturn}{Returns}
+Beta is the matrix returned. It contains the 6 numbers used to calibate the touch panel and convert the ADC units to units of mm. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_ae46b58b137cadde160617680fc30d35d}\label{classtouchpanel_1_1_touch_panel_ae46b58b137cadde160617680fc30d35d}} 
+\index{touchpanel.TouchPanel@{touchpanel.TouchPanel}!Calibrate@{Calibrate}}
+\index{Calibrate@{Calibrate}!touchpanel.TouchPanel@{touchpanel.TouchPanel}}
+\doxysubsubsection{\texorpdfstring{Calibrate()}{Calibrate()}}
+{\footnotesize\ttfamily def touchpanel.\+Touch\+Panel.\+Calibrate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function walks the user through the steps to calibrate the touchpanel. 
+
+As the user is instructed to tap 5 points on the touchpanel, this fucntion stores the ADC data points associated with points that were touched. These data points will be used in Beta(), which will calculate the calibration coefficients based on the positions and ADC data. \mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a0baa5cad49b76a25300c9f248803747f}\label{classtouchpanel_1_1_touch_panel_a0baa5cad49b76a25300c9f248803747f}} 
+\index{touchpanel.TouchPanel@{touchpanel.TouchPanel}!Filter@{Filter}}
+\index{Filter@{Filter}!touchpanel.TouchPanel@{touchpanel.TouchPanel}}
+\doxysubsubsection{\texorpdfstring{Filter()}{Filter()}}
+{\footnotesize\ttfamily def touchpanel.\+Touch\+Panel.\+Filter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ADC\+\_\+\+Data }\end{DoxyParamCaption})}
+
+
+
+An alpha-\/beta filter for removing \char`\"{}noise\char`\"{} from the ADC position measurements. 
+
+This function uses predictions to filter values from the touchpanel, making the data more cohesive. 
+\begin{DoxyParams}{Parameters}
+{\em ADC\+\_\+\+Data} & is an input to this fucntion\+: a tuple containing xpos, ypos (ADC units), and contact (boolean). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns a tuple in the same format as the input, only now it contains filtered xpos and ypos values. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_aabd79ddbb2f239954ea679a938382819}\label{classtouchpanel_1_1_touch_panel_aabd79ddbb2f239954ea679a938382819}} 
+\index{touchpanel.TouchPanel@{touchpanel.TouchPanel}!Read\_Panel@{Read\_Panel}}
+\index{Read\_Panel@{Read\_Panel}!touchpanel.TouchPanel@{touchpanel.TouchPanel}}
+\doxysubsubsection{\texorpdfstring{Read\_Panel()}{Read\_Panel()}}
+{\footnotesize\ttfamily def touchpanel.\+Touch\+Panel.\+Read\+\_\+\+Panel (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Beta }\end{DoxyParamCaption})}
+
+
+
+This fucntion is a combination of the scan, filter, and calibration fucntions defined earlier. 
+
+This will scan the x, y, and z components of the touch panel, and filter the data. The filtered data will then be scaled with the calibration coefficients from the Beta matrix. 
+\begin{DoxyParams}{Parameters}
+{\em Beta} & is the matrix containing the 6 numbers used to calibrate the touch panel and convert the ADC units to units of mm. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output of this function is a tuple containing the filtered and calibrated xpos, ypos (ADC units), contact (boolean), and time\+\_\+span (microseconds). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a67537f8164e31eb37e2311437fea2d2c}\label{classtouchpanel_1_1_touch_panel_a67537f8164e31eb37e2311437fea2d2c}} 
+\index{touchpanel.TouchPanel@{touchpanel.TouchPanel}!Scan@{Scan}}
+\index{Scan@{Scan}!touchpanel.TouchPanel@{touchpanel.TouchPanel}}
+\doxysubsubsection{\texorpdfstring{Scan()}{Scan()}}
+{\footnotesize\ttfamily def touchpanel.\+Touch\+Panel.\+Scan (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Scans the touch panel for the total position of the ball. 
+
+This function sets up the touch panel pins to be able to read the position of the ball in the x-\/direction, y-\/direction, and z-\/direction (contact). \begin{DoxyReturn}{Returns}
+This returns a tuple containing xpos, ypos, contact, and timespan. The positions are in ADC units and the timespan is in microseconds (for testing). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_ab5f832db5998bc8124f3f6f8a6e0406e}\label{classtouchpanel_1_1_touch_panel_ab5f832db5998bc8124f3f6f8a6e0406e}} 
+\index{touchpanel.TouchPanel@{touchpanel.TouchPanel}!xScan@{xScan}}
+\index{xScan@{xScan}!touchpanel.TouchPanel@{touchpanel.TouchPanel}}
+\doxysubsubsection{\texorpdfstring{xScan()}{xScan()}}
+{\footnotesize\ttfamily def touchpanel.\+Touch\+Panel.\+x\+Scan (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Scans the touch panel for the x-\/position of the ball. 
+
+This function sets up the touch panel pins to be able to read the position of the ball in the x-\/direction. \begin{DoxyReturn}{Returns}
+xpos is the x-\/position of the ball in ADC units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a395563525ae913291d036055c6a2bd7b}\label{classtouchpanel_1_1_touch_panel_a395563525ae913291d036055c6a2bd7b}} 
+\index{touchpanel.TouchPanel@{touchpanel.TouchPanel}!yScan@{yScan}}
+\index{yScan@{yScan}!touchpanel.TouchPanel@{touchpanel.TouchPanel}}
+\doxysubsubsection{\texorpdfstring{yScan()}{yScan()}}
+{\footnotesize\ttfamily def touchpanel.\+Touch\+Panel.\+y\+Scan (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Scans the touch panel for the y-\/position of the ball. 
+
+This function sets up the touch panel pins to be able to read the position of the ball in the y-\/direction. \begin{DoxyReturn}{Returns}
+ypos is the y-\/position of the ball in ADC units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtouchpanel_1_1_touch_panel_a920a804c1f6b2bf9c97337793456bbb1}\label{classtouchpanel_1_1_touch_panel_a920a804c1f6b2bf9c97337793456bbb1}} 
+\index{touchpanel.TouchPanel@{touchpanel.TouchPanel}!zScan@{zScan}}
+\index{zScan@{zScan}!touchpanel.TouchPanel@{touchpanel.TouchPanel}}
+\doxysubsubsection{\texorpdfstring{zScan()}{zScan()}}
+{\footnotesize\ttfamily def touchpanel.\+Touch\+Panel.\+z\+Scan (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Scans the touch panel to see if the ball is making contact. 
+
+This function sets up the touch panel pins to be able to read read if something is contacting the panel. \begin{DoxyReturn}{Returns}
+contact is a boolean telling if there is something on the panel. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{touchpanel_8py}{touchpanel.\+py}}\end{DoxyCompactItemize}

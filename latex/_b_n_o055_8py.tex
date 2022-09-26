@@ -1,0 +1,38 @@
+\hypertarget{_b_n_o055_8py}{}\doxysection{src/\+BNO055.py File Reference}
+\label{_b_n_o055_8py}\index{src/BNO055.py@{src/BNO055.py}}
+
+
+Driver to be used with the BNO055 IMU connected to the Nucelo board.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055.\+BNO055}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}} IMU driver class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_b_n_o055_8py_ad3b871bb38d2741aed75f3ece275c78f}\label{_b_n_o055_8py_ad3b871bb38d2741aed75f3ece275c78f}} 
+{\bfseries BNO055.\+i2c} = I2C(1, I2\+C.\+CONTROLLER)
+\item 
+\mbox{\Hypertarget{_b_n_o055_8py_a281842d3aea1a63d3345d4665355470a}\label{_b_n_o055_8py_a281842d3aea1a63d3345d4665355470a}} 
+{\bfseries BNO055.\+IMU} = BNO055(i2c)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Driver to be used with the BNO055 IMU connected to the Nucelo board. 
+
+This driver interacts directly with the BNO055. It initializes the IMU and puts it in operatiing mode. Additionally, it reads and writes the calibration coefficients to the IMU. The main purpose of the driver is to read the data from the IMU. The Euler Angles and angular velocites are read from here.
+
+The source code can be found at my repository under \char`\"{}\+Final Lab\char`\"{}\+: \href{https://bitbucket.org/jakelesher/me-305-labs}{\texttt{ https\+://bitbucket.\+org/jakelesher/me-\/305-\/labs}}
+
+\begin{DoxyAuthor}{Author}
+Jake Lesher 
+
+Daniel Xu 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/24/2022 
+\end{DoxyDate}

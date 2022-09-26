@@ -1,0 +1,59 @@
+\hypertarget{task_motor_8py}{}\doxysection{src/task\+Motor.py File Reference}
+\label{task_motor_8py}\index{src/taskMotor.py@{src/taskMotor.py}}
+
+
+The task that interfaces with the motors.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{task_motor_8py_a1aabc47a566c4b2afcadfb7c6d177845}{task\+Motor.\+task\+Motor\+Fcn}} (task\+Name, period, Duty1, Duty2)
+\begin{DoxyCompactList}\small\item\em This function interacts with the DRV8847 driver and corresponding motors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{task_motor_8py_aa9d6dfe5b29293931ce319d76259d72e}\label{task_motor_8py_aa9d6dfe5b29293931ce319d76259d72e}} 
+{\bfseries task\+Motor.\+S0\+\_\+\+INIT} = micropython.\+const(0)
+\item 
+\mbox{\Hypertarget{task_motor_8py_aa02025ec52cc1f24c9982e4851d8a9c0}\label{task_motor_8py_aa02025ec52cc1f24c9982e4851d8a9c0}} 
+{\bfseries task\+Motor.\+S1\+\_\+\+SET} = micropython.\+const(1)
+\item 
+\mbox{\Hypertarget{task_motor_8py_ae422e19eb21770268d67e4427cccc119}\label{task_motor_8py_ae422e19eb21770268d67e4427cccc119}} 
+{\bfseries task\+Motor.\+S2\+\_\+\+CLEAR} = micropython.\+const(2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The task that interfaces with the motors. 
+
+This task\textquotesingle{}s main function is to set the duty cycle of either motor while handling external interruptions. This task will be the only task communicating with the \mbox{\hyperlink{motor_8py}{motor.\+py}} and DRV8847.\+py driver modules.
+
+\begin{DoxyVerb}@author     Jake Lesher
+@author     Daniel Xu
+@date       02/16/2022
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{task_motor_8py_a1aabc47a566c4b2afcadfb7c6d177845}\label{task_motor_8py_a1aabc47a566c4b2afcadfb7c6d177845}} 
+\index{taskMotor.py@{taskMotor.py}!taskMotorFcn@{taskMotorFcn}}
+\index{taskMotorFcn@{taskMotorFcn}!taskMotor.py@{taskMotor.py}}
+\doxysubsubsection{\texorpdfstring{taskMotorFcn()}{taskMotorFcn()}}
+{\footnotesize\ttfamily def task\+Motor.\+task\+Motor\+Fcn (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{Duty1,  }\item[{}]{Duty2 }\end{DoxyParamCaption})}
+
+
+
+This function interacts with the DRV8847 driver and corresponding motors. 
+
+This function calls upon the driver to set the duty cycle percentage for both motors. After initialization this fucntion will repeat, setting the speed of each motor to Duty1 and Duty2. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & is the name associated the with task\+Motor in \mbox{\hyperlink{main_8py}{main.\+py}}. \\
+\hline
+{\em period} & determines the frequency at which task\+User is to run. \\
+\hline
+{\em Duty1} & is the shared queue containing the requested duty cycle percentage for motor 1. \\
+\hline
+{\em Duty2} & is the shared queue containing the requested duty cycle percentage for motor 2. \\
+\hline
+\end{DoxyParams}

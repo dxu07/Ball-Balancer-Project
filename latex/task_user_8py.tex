@@ -1,0 +1,176 @@
+\hypertarget{task_user_8py}{}\doxysection{src/task\+User.py File Reference}
+\label{task_user_8py}\index{src/taskUser.py@{src/taskUser.py}}
+
+
+The task that will run the user interface.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{task_user_8py_a78680b9a55848edccbae80eeb262b21a}{task\+User.\+print\+Help}} ()
+\begin{DoxyCompactList}\small\item\em This function outputs the GUI of encoder. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{task_user_8py_a3512e01eb8e4da1f5127d35801ead5c7}{task\+User.\+Input\+Duty\+FCN}} (char\+\_\+\+In, DUTY\+\_\+str, d\+Flag)
+\begin{DoxyCompactList}\small\item\em This function reads numeric data. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{task_user_8py_a6e3aaeb8fd31c0fa56f52ed2340fa309}{task\+User.\+Input\+Number\+FCN}} (char\+\_\+\+In, Num\+\_\+str, e\+Flag)
+\begin{DoxyCompactList}\small\item\em This function reads numeric data. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{task_user_8py_a97658ad9c3f551d68e72f07b5d41fe76}{task\+User.\+task\+User\+Fcn}} (task\+Name, period, Data, Velocity, Duty1, Duty2, cl\+Flag, Kp, Ki, Kd, Position, Contact)
+\begin{DoxyCompactList}\small\item\em This function serves as the main user interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{task_user_8py_a16eb45ec7a4e48ea0960ec48a4e9f4f4}\label{task_user_8py_a16eb45ec7a4e48ea0960ec48a4e9f4f4}} 
+{\bfseries task\+User.\+S0\+\_\+\+INIT} = micropython.\+const(0)
+\item 
+\mbox{\Hypertarget{task_user_8py_a2f6b6b7ea39aa52eac26b291b2ec9ced}\label{task_user_8py_a2f6b6b7ea39aa52eac26b291b2ec9ced}} 
+{\bfseries task\+User.\+S1\+\_\+\+CMD} = micropython.\+const(1)
+\item 
+\mbox{\Hypertarget{task_user_8py_a70bb5c8d900d7fdcd4dc5596cb090951}\label{task_user_8py_a70bb5c8d900d7fdcd4dc5596cb090951}} 
+{\bfseries task\+User.\+S2\+\_\+\+ZERO} = micropython.\+const(2)
+\item 
+\mbox{\Hypertarget{task_user_8py_a24f1ca56910c99aa8e4f2626db00b6cb}\label{task_user_8py_a24f1ca56910c99aa8e4f2626db00b6cb}} 
+{\bfseries task\+User.\+S3\+\_\+\+POSITION} = micropython.\+const(3)
+\item 
+\mbox{\Hypertarget{task_user_8py_a825bbc08773e907d4bfbbd0f4b287798}\label{task_user_8py_a825bbc08773e907d4bfbbd0f4b287798}} 
+{\bfseries task\+User.\+S4\+\_\+\+DELTA} = micropython.\+const(4)
+\item 
+\mbox{\Hypertarget{task_user_8py_ac55458e79be562b54d7556958a7aae6a}\label{task_user_8py_ac55458e79be562b54d7556958a7aae6a}} 
+{\bfseries task\+User.\+S5\+\_\+\+GET} = micropython.\+const(5)
+\item 
+\mbox{\Hypertarget{task_user_8py_acb7e26e967221e04ed4d87bf2a9cc1f6}\label{task_user_8py_acb7e26e967221e04ed4d87bf2a9cc1f6}} 
+{\bfseries task\+User.\+S6\+\_\+\+STOP} = micropython.\+const(6)
+\item 
+\mbox{\Hypertarget{task_user_8py_a41eba228c50bc2a568f5d0ee9af725fc}\label{task_user_8py_a41eba228c50bc2a568f5d0ee9af725fc}} 
+{\bfseries task\+User.\+S7\+\_\+\+DATA} = micropython.\+const(7)
+\item 
+\mbox{\Hypertarget{task_user_8py_a871b91dc07adca82f59a37a87fc11622}\label{task_user_8py_a871b91dc07adca82f59a37a87fc11622}} 
+{\bfseries task\+User.\+S8\+\_\+\+VEL} = micropython.\+const(8)
+\item 
+\mbox{\Hypertarget{task_user_8py_a5786985ccd25c3beff11dbfa1bf7fbff}\label{task_user_8py_a5786985ccd25c3beff11dbfa1bf7fbff}} 
+{\bfseries task\+User.\+S9\+\_\+\+DUTY1} = micropython.\+const(9)
+\item 
+\mbox{\Hypertarget{task_user_8py_aa8f7c197dcec3983be540218b4c1a8b4}\label{task_user_8py_aa8f7c197dcec3983be540218b4c1a8b4}} 
+{\bfseries task\+User.\+S10\+\_\+\+DUTY2} = micropython.\+const(10)
+\item 
+\mbox{\Hypertarget{task_user_8py_a2ac961975f23979479b563e16f6ae203}\label{task_user_8py_a2ac961975f23979479b563e16f6ae203}} 
+{\bfseries task\+User.\+S11\+\_\+\+CLRF} = micropython.\+const(11)
+\item 
+\mbox{\Hypertarget{task_user_8py_a8cd8ad5b717d74ee10d6f2c81db78b06}\label{task_user_8py_a8cd8ad5b717d74ee10d6f2c81db78b06}} 
+{\bfseries task\+User.\+S12\+\_\+\+THELP} = micropython.\+const(12)
+\item 
+\mbox{\Hypertarget{task_user_8py_a1e2f1d2b05f6b818f9263864f5e3a5cc}\label{task_user_8py_a1e2f1d2b05f6b818f9263864f5e3a5cc}} 
+{\bfseries task\+User.\+S13\+\_\+\+TEST} = micropython.\+const(13)
+\item 
+\mbox{\Hypertarget{task_user_8py_ac5d4ce6e57a0653570af30e8d2976891}\label{task_user_8py_ac5d4ce6e57a0653570af30e8d2976891}} 
+{\bfseries task\+User.\+S14\+\_\+\+SETOMEGA} = micropython.\+const(14)
+\item 
+\mbox{\Hypertarget{task_user_8py_ae0b515e7d03db2654d223b9cdee2c4b2}\label{task_user_8py_ae0b515e7d03db2654d223b9cdee2c4b2}} 
+{\bfseries task\+User.\+S15\+\_\+\+SETGAIN} = micropython.\+const(15)
+\item 
+\mbox{\Hypertarget{task_user_8py_ab89077ebb01fded04c763926bd3580d3}\label{task_user_8py_ab89077ebb01fded04c763926bd3580d3}} 
+{\bfseries task\+User.\+S16\+\_\+\+TOGGLELOOP} = micropython.\+const(16)
+\item 
+\mbox{\Hypertarget{task_user_8py_ad4fc21af6af2f2174528e08793dc8f98}\label{task_user_8py_ad4fc21af6af2f2174528e08793dc8f98}} 
+{\bfseries task\+User.\+S17\+\_\+\+STEP} = micropython.\+const(17)
+\item 
+\mbox{\Hypertarget{task_user_8py_aece831b481cb5f61e2085fa23e3e2e16}\label{task_user_8py_aece831b481cb5f61e2085fa23e3e2e16}} 
+{\bfseries task\+User.\+S18\+\_\+\+DATA} = micropython.\+const(18)
+\item 
+\mbox{\Hypertarget{task_user_8py_a540949874b51355ca39825b390e43a08}\label{task_user_8py_a540949874b51355ca39825b390e43a08}} 
+{\bfseries task\+User.\+S19\+\_\+\+Inner\+\_\+\+Outer\+\_\+\+Gains} = micropython.\+const(19)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The task that will run the user interface. 
+
+This task takes in keyboard commands from the user to perform certain tasks. This allows for the user to interact with the Encoder and motor tasks to determine instanenous data or to collect data for a period of time. This is done by defining various states that perform different tasks.
+
+\begin{DoxyVerb}@author     Jake Lesher
+@author     Daniel Xu
+@date       02/16/2022
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{task_user_8py_a3512e01eb8e4da1f5127d35801ead5c7}\label{task_user_8py_a3512e01eb8e4da1f5127d35801ead5c7}} 
+\index{taskUser.py@{taskUser.py}!InputDutyFCN@{InputDutyFCN}}
+\index{InputDutyFCN@{InputDutyFCN}!taskUser.py@{taskUser.py}}
+\doxysubsubsection{\texorpdfstring{InputDutyFCN()}{InputDutyFCN()}}
+{\footnotesize\ttfamily def task\+User.\+Input\+Duty\+FCN (\begin{DoxyParamCaption}\item[{}]{char\+\_\+\+In,  }\item[{}]{DUTY\+\_\+str,  }\item[{}]{d\+Flag }\end{DoxyParamCaption})}
+
+
+
+This function reads numeric data. 
+
+Based off of the inputs of the user, this function determines if the input is valid. It ignores all non-\/numerical inputs, except for the negative sign (-\/), the enter key (\textbackslash{}r, ~\newline
+), the period key (.), and the backspace key ({\bfseries{}}, \textquotesingle{}\textbackslash{}x08\textquotesingle{}, \textbackslash{}x7F). It also limits the duty cycle to be between -\/100\% and 100\%. 
+\begin{DoxyParams}{Parameters}
+{\em char\+\_\+\+In} & is the user input from the user \\
+\hline
+{\em Duty\+\_\+str} & is the existing duty string that is constantly changing \\
+\hline
+{\em d\+Flag} & is boolean to signal if enter has been pressed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{task_user_8py_a6e3aaeb8fd31c0fa56f52ed2340fa309}\label{task_user_8py_a6e3aaeb8fd31c0fa56f52ed2340fa309}} 
+\index{taskUser.py@{taskUser.py}!InputNumberFCN@{InputNumberFCN}}
+\index{InputNumberFCN@{InputNumberFCN}!taskUser.py@{taskUser.py}}
+\doxysubsubsection{\texorpdfstring{InputNumberFCN()}{InputNumberFCN()}}
+{\footnotesize\ttfamily def task\+User.\+Input\+Number\+FCN (\begin{DoxyParamCaption}\item[{}]{char\+\_\+\+In,  }\item[{}]{Num\+\_\+str,  }\item[{}]{e\+Flag }\end{DoxyParamCaption})}
+
+
+
+This function reads numeric data. 
+
+Based off of the inputs of the user, this function determines if the input is valid. It ignores all non-\/numerical inputs, except for the negative sign (-\/), the enter key (\textbackslash{}r, ~\newline
+), the period key (.), and the backspace key ({\bfseries{}}, \textquotesingle{}\textbackslash{}x08\textquotesingle{}, \textbackslash{}x7F). It also limits the duty cycle to be between -\/100\% and 100\%. 
+\begin{DoxyParams}{Parameters}
+{\em char\+\_\+\+In} & is the user input from the user \\
+\hline
+{\em Duty\+\_\+str} & is the existing duty string that is constantly changing \\
+\hline
+{\em d\+Flag} & is boolean to signal if enter has been pressed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{task_user_8py_a78680b9a55848edccbae80eeb262b21a}\label{task_user_8py_a78680b9a55848edccbae80eeb262b21a}} 
+\index{taskUser.py@{taskUser.py}!printHelp@{printHelp}}
+\index{printHelp@{printHelp}!taskUser.py@{taskUser.py}}
+\doxysubsubsection{\texorpdfstring{printHelp()}{printHelp()}}
+{\footnotesize\ttfamily def task\+User.\+print\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function outputs the GUI of encoder. 
+
+The different commands of the user interface is outputted here. \mbox{\Hypertarget{task_user_8py_a97658ad9c3f551d68e72f07b5d41fe76}\label{task_user_8py_a97658ad9c3f551d68e72f07b5d41fe76}} 
+\index{taskUser.py@{taskUser.py}!taskUserFcn@{taskUserFcn}}
+\index{taskUserFcn@{taskUserFcn}!taskUser.py@{taskUser.py}}
+\doxysubsubsection{\texorpdfstring{taskUserFcn()}{taskUserFcn()}}
+{\footnotesize\ttfamily def task\+User.\+task\+User\+Fcn (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{Data,  }\item[{}]{Velocity,  }\item[{}]{Duty1,  }\item[{}]{Duty2,  }\item[{}]{cl\+Flag,  }\item[{}]{Kp,  }\item[{}]{Ki,  }\item[{}]{Kd,  }\item[{}]{Position,  }\item[{}]{Contact }\end{DoxyParamCaption})}
+
+
+
+This function serves as the main user interface. 
+
+This functions allows for the user to communicate with the backend using shared data and queues. It allows for the user to input different commands to perform different actions like zeroing the position of the encoder, determing the instantaneous position of the encoder, the change of position from the most immediate last position to the current position, and collect data. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & is the name associated the with the task\+User in main. \\
+\hline
+{\em period} & is the frequency of which the task\+User is to be run. \\
+\hline
+{\em z\+Flag} & is the shared variable that communicates the task\+Encoder to determine whether the encoder should be zeroed or not. \\
+\hline
+{\em Data} & is the share of positional data with task\+Encoder.\+py. \\
+\hline
+{\em Delta} & is the share of the delta value with task\+Encoder.\+py. \\
+\hline
+{\em Velocity} & is the share of the velocity value with task\+Encoder.\+py \\
+\hline
+{\em Duty1} & is the shared queue containing the requested duty cycle percentage for motor 1. \\
+\hline
+{\em Duty2} & is the shared queue containing the requested duty cycle percentage for motor 2. \\
+\hline
+{\em c\+Flag} & is a boolean to signal the clearing of fault conditions \\
+\hline
+\end{DoxyParams}

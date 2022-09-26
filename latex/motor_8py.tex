@@ -1,0 +1,33 @@
+\hypertarget{motor_8py}{}\doxysection{src/motor.py File Reference}
+\label{motor_8py}\index{src/motor.py@{src/motor.py}}
+
+
+Motor class to initialize and set up the motors in DRV8847.\+py.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmotor_1_1_motor}{motor.\+Motor}}
+\begin{DoxyCompactList}\small\item\em A motor class for one channel of the DRV8847. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{motor_8py_a67884594018b5d9c1ce73cca72713e32}\label{motor_8py_a67884594018b5d9c1ce73cca72713e32}} 
+{\bfseries motor.\+PWM\+\_\+tim} = Timer(3, freq = 20\+\_\+000)
+\item 
+\mbox{\Hypertarget{motor_8py_a03cc36735d0f3631335e72eb292bfdd8}\label{motor_8py_a03cc36735d0f3631335e72eb292bfdd8}} 
+{\bfseries motor.\+motor\+\_\+1} = Motor(PWM\+\_\+tim, Pin.\+cpu.\+B4, Pin.\+cpu.\+B5, 1)
+\item 
+\mbox{\Hypertarget{motor_8py_abeb996b6fccebdf67aeaba55648fd7cd}\label{motor_8py_abeb996b6fccebdf67aeaba55648fd7cd}} 
+{\bfseries motor.\+motor\+\_\+2} = Motor(PWM\+\_\+tim, Pin.\+cpu.\+B0, Pin.\+cpu.\+B1, 2)
+\item 
+\mbox{\Hypertarget{motor_8py_a2f14a2330fb6a152d72e52eb045c39bd}\label{motor_8py_a2f14a2330fb6a152d72e52eb045c39bd}} 
+{\bfseries motor.\+n\+SLEEP} = Pin(Pin.\+cpu.\+A15, mode=Pin.\+OUT\+\_\+\+PP)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Motor class to initialize and set up the motors in DRV8847.\+py. 
+
+This motor class initializes the pins with the motor object to be enabled. Additionally, it allows for a pulse width modulation control that changes the speed of the motor. This allows for the Motor to move clockwise and counterclockwise at difference speeds. 

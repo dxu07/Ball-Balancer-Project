@@ -1,0 +1,198 @@
+\hypertarget{main_8py}{}\doxysection{src/main.py File Reference}
+\label{main_8py}\index{src/main.py@{src/main.py}}
+
+
+The main script for running the tasks of the final lab project.  
+
+
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8py_a964298d84a15bf91d6d8478aa401758d}{main.\+z\+Flag}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)
+\begin{DoxyCompactList}\small\item\em The variable, z\+Flag, is a shared variable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_abeed2a7f2a9019fc20275e39d6e324da}{main.\+Data}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()
+\begin{DoxyCompactList}\small\item\em The variable, Data, is a queue of shared data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_aa38e60f506e8d09bdd00a4aa7f5d080f}{main.\+Delta}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()
+\begin{DoxyCompactList}\small\item\em The variable, Delta, is a queue of shared data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_ac03dc74098ae2fc564a9ad826ee21c85}{main.\+Velocity}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()
+\begin{DoxyCompactList}\small\item\em The variable, Velocity, is a queue of shared data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_a073caaa7a753d17cc86a12a4efeeaa54}{main.\+Duty1}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()
+\begin{DoxyCompactList}\small\item\em The variable, Duty1, is a queue of shared data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_a3400f823213c04975c3a9555b203dc05}{main.\+Duty2}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()
+\begin{DoxyCompactList}\small\item\em The variable, Duty2, is a queue of shared data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_af43153396c16ec536296940631a6be90}{main.\+cl\+Flag}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)
+\begin{DoxyCompactList}\small\item\em The variable, cl\+Flag, is a shared variable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_a62bb069cc916457d26d7121c79cf94ab}{main.\+Kp}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()
+\begin{DoxyCompactList}\small\item\em The variable, Kp, is a shared variable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_a19329012a007ea0310b85fefc95b961d}{main.\+Ki}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()
+\begin{DoxyCompactList}\small\item\em The variable, Ki, is a shared variable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_a1085c721a11e0b07a7aaa6105c8fb736}{main.\+Kd}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()
+\begin{DoxyCompactList}\small\item\em The variable, Kd, is a shared variable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_aeffdad32ddbf16114ddc8ace4d130439}{main.\+Ang\+Vel}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()
+\begin{DoxyCompactList}\small\item\em The variable, Ang\+Vel, is a shared variable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_a5a3bf2dc8eb68353b890eac00094ce68}{main.\+Position}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()
+\begin{DoxyCompactList}\small\item\em The variable, Position, is a shared variable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_ad8f2f82bcb508c710aa980f7c3e88ba8}{main.\+Contact}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()
+\begin{DoxyCompactList}\small\item\em The variable, Contact, is a shared variable. \end{DoxyCompactList}\item 
+list {\bfseries main.\+task\+List}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main script for running the tasks of the final lab project. 
+
+The purpose of this main script is to run the tasks responsible for the functionality of the final project. The shares/queues that will be used in this lab are also primarily defined in this script.
+
+\begin{DoxyVerb}@author     Jake Lesher
+@author     Daniel Xu
+@date       02/16/2022
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8py_aeffdad32ddbf16114ddc8ace4d130439}\label{main_8py_aeffdad32ddbf16114ddc8ace4d130439}} 
+\index{main.py@{main.py}!AngVel@{AngVel}}
+\index{AngVel@{AngVel}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{AngVel}{AngVel}}
+{\footnotesize\ttfamily main.\+Ang\+Vel = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()}
+
+
+
+The variable, Ang\+Vel, is a shared variable. 
+
+This shared variable is the value of \+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+ \mbox{\Hypertarget{main_8py_af43153396c16ec536296940631a6be90}\label{main_8py_af43153396c16ec536296940631a6be90}} 
+\index{main.py@{main.py}!clFlag@{clFlag}}
+\index{clFlag@{clFlag}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{clFlag}{clFlag}}
+{\footnotesize\ttfamily main.\+cl\+Flag = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)}
+
+
+
+The variable, cl\+Flag, is a shared variable. 
+
+This shared variable is a boolean that is shared between task\+User and task\+Controller to determine whether or not the motor should be running in closed-\/loop. \mbox{\Hypertarget{main_8py_ad8f2f82bcb508c710aa980f7c3e88ba8}\label{main_8py_ad8f2f82bcb508c710aa980f7c3e88ba8}} 
+\index{main.py@{main.py}!Contact@{Contact}}
+\index{Contact@{Contact}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{Contact}{Contact}}
+{\footnotesize\ttfamily main.\+Contact = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()}
+
+
+
+The variable, Contact, is a shared variable. 
+
+This shared variable is a boolean telling if there is z-\/contact on the touch panel. \mbox{\Hypertarget{main_8py_abeed2a7f2a9019fc20275e39d6e324da}\label{main_8py_abeed2a7f2a9019fc20275e39d6e324da}} 
+\index{main.py@{main.py}!Data@{Data}}
+\index{Data@{Data}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily main.\+Data = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()}
+
+
+
+The variable, Data, is a queue of shared data. 
+
+This shared queue is the positional data of the encoder, in radians. It is updated in task\+Encoder and recorded in task\+User. \mbox{\Hypertarget{main_8py_aa38e60f506e8d09bdd00a4aa7f5d080f}\label{main_8py_aa38e60f506e8d09bdd00a4aa7f5d080f}} 
+\index{main.py@{main.py}!Delta@{Delta}}
+\index{Delta@{Delta}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{Delta}{Delta}}
+{\footnotesize\ttfamily main.\+Delta = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()}
+
+
+
+The variable, Delta, is a queue of shared data. 
+
+This shared queue is the delta data of the encoder in radians. It is updated in task\+Encoder and recorded in task\+User. \mbox{\Hypertarget{main_8py_a073caaa7a753d17cc86a12a4efeeaa54}\label{main_8py_a073caaa7a753d17cc86a12a4efeeaa54}} 
+\index{main.py@{main.py}!Duty1@{Duty1}}
+\index{Duty1@{Duty1}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{Duty1}{Duty1}}
+{\footnotesize\ttfamily main.\+Duty1 = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()}
+
+
+
+The variable, Duty1, is a queue of shared data. 
+
+This shared queue is the duty cycle for motor 1 as requested in task\+User. The queue is then read in task\+Motor, where it is sent to the motor driver. \mbox{\Hypertarget{main_8py_a3400f823213c04975c3a9555b203dc05}\label{main_8py_a3400f823213c04975c3a9555b203dc05}} 
+\index{main.py@{main.py}!Duty2@{Duty2}}
+\index{Duty2@{Duty2}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{Duty2}{Duty2}}
+{\footnotesize\ttfamily main.\+Duty2 = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()}
+
+
+
+The variable, Duty2, is a queue of shared data. 
+
+This shared queue is the current angular velocity in rad/s. It is updated in task\+Encoder and recorded in task\+User. \mbox{\Hypertarget{main_8py_a1085c721a11e0b07a7aaa6105c8fb736}\label{main_8py_a1085c721a11e0b07a7aaa6105c8fb736}} 
+\index{main.py@{main.py}!Kd@{Kd}}
+\index{Kd@{Kd}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{Kd}{Kd}}
+{\footnotesize\ttfamily main.\+Kd = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()}
+
+
+
+The variable, Kd, is a shared variable. 
+
+This shared variable is the value of the derivative gain to be used in the closed-\/loop. \mbox{\Hypertarget{main_8py_a19329012a007ea0310b85fefc95b961d}\label{main_8py_a19329012a007ea0310b85fefc95b961d}} 
+\index{main.py@{main.py}!Ki@{Ki}}
+\index{Ki@{Ki}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{Ki}{Ki}}
+{\footnotesize\ttfamily main.\+Ki = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()}
+
+
+
+The variable, Ki, is a shared variable. 
+
+This shared variable is the value of the integral gain to be used in the closed-\/loop. \mbox{\Hypertarget{main_8py_a62bb069cc916457d26d7121c79cf94ab}\label{main_8py_a62bb069cc916457d26d7121c79cf94ab}} 
+\index{main.py@{main.py}!Kp@{Kp}}
+\index{Kp@{Kp}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{Kp}{Kp}}
+{\footnotesize\ttfamily main.\+Kp = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()}
+
+
+
+The variable, Kp, is a shared variable. 
+
+This shared variable is the value of the proportional gain to be used in the closed-\/loop. \mbox{\Hypertarget{main_8py_a5a3bf2dc8eb68353b890eac00094ce68}\label{main_8py_a5a3bf2dc8eb68353b890eac00094ce68}} 
+\index{main.py@{main.py}!Position@{Position}}
+\index{Position@{Position}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily main.\+Position = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()}
+
+
+
+The variable, Position, is a shared variable. 
+
+This shared variable is the value position read by the touch panel \mbox{[}mm\mbox{]}. \mbox{\Hypertarget{main_8py_a37acff9251c443ec14c1f449b6b6a745}\label{main_8py_a37acff9251c443ec14c1f449b6b6a745}} 
+\index{main.py@{main.py}!taskList@{taskList}}
+\index{taskList@{taskList}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{taskList}{taskList}}
+{\footnotesize\ttfamily list main.\+task\+List}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  [\mbox{\hyperlink{task_i_m_u_8py_a7388305003e89eb54d5e10bf7a2a057d}{taskIMU.taskIMUFcn}}(\textcolor{stringliteral}{'taskIMU'}, 10\_000, Data, Velocity),}
+\DoxyCodeLine{2                 \mbox{\hyperlink{task_panel_8py_a6d1b0410618ecbc2bcf760f3391cf7ef}{taskPanel.taskPanelFcn}}(\textcolor{stringliteral}{'taskPanel'}, 10\_000, Position, Contact),}
+\DoxyCodeLine{3                 \mbox{\hyperlink{task_user_8py_a97658ad9c3f551d68e72f07b5d41fe76}{taskUser.taskUserFcn}}(\textcolor{stringliteral}{'taskUser'}, 10\_000, Data, Velocity, Duty1, Duty2, clFlag, Kp, Ki,Kd, Position, Contact),}
+\DoxyCodeLine{4                 \mbox{\hyperlink{task_motor_8py_a1aabc47a566c4b2afcadfb7c6d177845}{taskMotor.taskMotorFcn}}(\textcolor{stringliteral}{'taskMotor'}, 10\_000, Duty1, Duty2),}
+\DoxyCodeLine{5                 \mbox{\hyperlink{task_controller_8py_ad79a6aab62675186d43f9f02010bf38c}{taskController.taskControllerFcn}}(\textcolor{stringliteral}{'taskController'}, 10\_000, clFlag, Velocity, Duty1, Kp, Ki, Kd, Data, Duty2, Position, Contact)]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8py_ac03dc74098ae2fc564a9ad826ee21c85}\label{main_8py_ac03dc74098ae2fc564a9ad826ee21c85}} 
+\index{main.py@{main.py}!Velocity@{Velocity}}
+\index{Velocity@{Velocity}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{Velocity}{Velocity}}
+{\footnotesize\ttfamily main.\+Velocity = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}()}
+
+
+
+The variable, Velocity, is a queue of shared data. 
+
+This shared queue is the current angular velocity in rad/s. It is updated in task\+Encoder and recorded in task\+User. \mbox{\Hypertarget{main_8py_a964298d84a15bf91d6d8478aa401758d}\label{main_8py_a964298d84a15bf91d6d8478aa401758d}} 
+\index{main.py@{main.py}!zFlag@{zFlag}}
+\index{zFlag@{zFlag}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{zFlag}{zFlag}}
+{\footnotesize\ttfamily main.\+z\+Flag = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)}
+
+
+
+The variable, z\+Flag, is a shared variable. 
+
+This shared variable is a boolean that is shared between task\+User and task\+Encoder to determine whether or not the encoder object needs to be zeroed. 

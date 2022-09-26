@@ -1,0 +1,42 @@
+\hypertarget{touchpanel_8py}{}\doxysection{src/touchpanel.py File Reference}
+\label{touchpanel_8py}\index{src/touchpanel.py@{src/touchpanel.py}}
+
+
+Driver to be used with the touch panel.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtouchpanel_1_1_touch_panel}{touchpanel.\+Touch\+Panel}}
+\begin{DoxyCompactList}\small\item\em The class for initializing, reading, filtering, and calibrating the 3-\/wire resistive touch panel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{touchpanel_8py_a8788b66fd0042ff0347524d11a1cdcfb}\label{touchpanel_8py_a8788b66fd0042ff0347524d11a1cdcfb}} 
+{\bfseries touchpanel.\+touchpanel} = Touch\+Panel()
+\item 
+\mbox{\Hypertarget{touchpanel_8py_a80bb4ab43e725cae629d280a2f1d9d2c}\label{touchpanel_8py_a80bb4ab43e725cae629d280a2f1d9d2c}} 
+bool {\bfseries touchpanel.\+Cal\+\_\+complete} = False
+\item 
+\mbox{\Hypertarget{touchpanel_8py_aec1df86ec5aa348e36c3645f5f363e4d}\label{touchpanel_8py_aec1df86ec5aa348e36c3645f5f363e4d}} 
+{\bfseries touchpanel.\+Cal} = touchpanel.\+Calibrate()
+\item 
+\mbox{\Hypertarget{touchpanel_8py_a80069cdcb483f9f150732c906655c329}\label{touchpanel_8py_a80069cdcb483f9f150732c906655c329}} 
+{\bfseries touchpanel.\+Beta} = touchpanel.\+Beta()
+\item 
+\mbox{\Hypertarget{touchpanel_8py_a951b34e65cd8f2e42cdd27d61bbac565}\label{touchpanel_8py_a951b34e65cd8f2e42cdd27d61bbac565}} 
+{\bfseries touchpanel.\+Data} = touchpanel.\+Read\+\_\+\+Panel(Beta)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Driver to be used with the touch panel. 
+
+This driver performs an Xscan, Yscan, and a Zscan on the touchpanel. This returns the x position, y position of the ball. It also determines whether or not there is any contact with the touch panel. To make the data more accurate, alpha beta filtering is utilized to reduce the noise in the data.
+
+\begin{DoxyVerb}@author     Jake Lesher
+@author     Daniel Xu
+@date       3/16/2022
+\end{DoxyVerb}
+ 

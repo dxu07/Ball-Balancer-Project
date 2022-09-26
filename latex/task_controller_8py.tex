@@ -1,0 +1,70 @@
+\hypertarget{task_controller_8py}{}\doxysection{src/task\+Controller.py File Reference}
+\label{task_controller_8py}\index{src/taskController.py@{src/taskController.py}}
+
+
+The task that interfaces with the Closed Loop class.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{task_controller_8py_ad79a6aab62675186d43f9f02010bf38c}{task\+Controller.\+task\+Controller\+Fcn}} (task\+Name, period, cl\+Flag, Velocity, Duty1, Kp, Ki, Kd, Data, Duty2, Position, Contact)
+\begin{DoxyCompactList}\small\item\em This function interacts with the Closed\+Loop driver, sending a duty cycle based on the calculated error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{task_controller_8py_a6000f04c24923a29695caeb21daec4f6}\label{task_controller_8py_a6000f04c24923a29695caeb21daec4f6}} 
+{\bfseries task\+Controller.\+S0\+\_\+\+INIT} = micropython.\+const(0)
+\item 
+\mbox{\Hypertarget{task_controller_8py_af7e094ce4d22fdf045dffb4966ca6570}\label{task_controller_8py_af7e094ce4d22fdf045dffb4966ca6570}} 
+{\bfseries task\+Controller.\+S1\+\_\+\+SET} = micropython.\+const(1)
+\item 
+\mbox{\Hypertarget{task_controller_8py_af0b6b651468be640e5668825e19197d4}\label{task_controller_8py_af0b6b651468be640e5668825e19197d4}} 
+{\bfseries task\+Controller.\+S2\+\_\+\+ACTIVE} = micropython.\+const(2)
+\item 
+\mbox{\Hypertarget{task_controller_8py_ac1773c93345180d3ce8409d955f32126}\label{task_controller_8py_ac1773c93345180d3ce8409d955f32126}} 
+{\bfseries task\+Controller.\+S3\+\_\+\+NOBALL} = micropython.\+const(3)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The task that interfaces with the Closed Loop class. 
+
+This task\textquotesingle{}s main function is to provide the Closed\+Loop driver with the user-\/selected gain and Vref values.
+
+\begin{DoxyVerb}@author     Jake Lesher
+@author     Daniel Xu
+@date       02/23/2022
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{task_controller_8py_ad79a6aab62675186d43f9f02010bf38c}\label{task_controller_8py_ad79a6aab62675186d43f9f02010bf38c}} 
+\index{taskController.py@{taskController.py}!taskControllerFcn@{taskControllerFcn}}
+\index{taskControllerFcn@{taskControllerFcn}!taskController.py@{taskController.py}}
+\doxysubsubsection{\texorpdfstring{taskControllerFcn()}{taskControllerFcn()}}
+{\footnotesize\ttfamily def task\+Controller.\+task\+Controller\+Fcn (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{cl\+Flag,  }\item[{}]{Velocity,  }\item[{}]{Duty1,  }\item[{}]{Kp,  }\item[{}]{Ki,  }\item[{}]{Kd,  }\item[{}]{Data,  }\item[{}]{Duty2,  }\item[{}]{Position,  }\item[{}]{Contact }\end{DoxyParamCaption})}
+
+
+
+This function interacts with the Closed\+Loop driver, sending a duty cycle based on the calculated error. 
+
+This function calls upon the driver to set the duty cycle percentage for motor 1. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & is the name associated the with task\+Controller in \mbox{\hyperlink{main_8py}{main.\+py}}. \\
+\hline
+{\em period} & sets the rate at which task\+Controller is to run. \\
+\hline
+{\em cl\+Flag} & is the shared boolean that toggles closed-\/loop control. \\
+\hline
+{\em Velocity} & is the share of the velocity value with task\+Encoder.\+py \\
+\hline
+{\em Vref} & is the share of the velocity requested by the user in task\+User. \\
+\hline
+{\em Duty1} & is the share that contains the duty cycle percentage for motor 1. \\
+\hline
+{\em Kp} & is the share of the user-\/requested proportional gain. \\
+\hline
+{\em Ki} & is the share of the user-\/requested integral gain. \\
+\hline
+\end{DoxyParams}

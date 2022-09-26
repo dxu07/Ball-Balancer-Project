@@ -1,0 +1,49 @@
+\hypertarget{task_panel_8py}{}\doxysection{src/task\+Panel.py File Reference}
+\label{task_panel_8py}\index{src/taskPanel.py@{src/taskPanel.py}}
+
+
+Task that interacts with the touch panel driver.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{task_panel_8py_a6d1b0410618ecbc2bcf760f3391cf7ef}{task\+Panel.\+task\+Panel\+Fcn}} (task\+Name, period, Position, Contact)
+\begin{DoxyCompactList}\small\item\em This function interacts with the driver to update the position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Task that interacts with the touch panel driver. 
+
+This task communicates directly with the touch panel driver. It calibrates the touch panel and reads the position of the ball. It also determines if the ball is on the platform or not.
+
+\begin{DoxyAuthor}{Author}
+Jake Lesher 
+
+Daniel Xu 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02/16/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{task_panel_8py_a6d1b0410618ecbc2bcf760f3391cf7ef}\label{task_panel_8py_a6d1b0410618ecbc2bcf760f3391cf7ef}} 
+\index{taskPanel.py@{taskPanel.py}!taskPanelFcn@{taskPanelFcn}}
+\index{taskPanelFcn@{taskPanelFcn}!taskPanel.py@{taskPanel.py}}
+\doxysubsubsection{\texorpdfstring{taskPanelFcn()}{taskPanelFcn()}}
+{\footnotesize\ttfamily def task\+Panel.\+task\+Panel\+Fcn (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{Position,  }\item[{}]{Contact }\end{DoxyParamCaption})}
+
+
+
+This function interacts with the driver to update the position. 
+
+This function calls upon the driver the update the position of the encoder frequently so that the position can be accurately determined. In addition to updating the position, it also takes the positional and delta data from the driver. Furthermore, this function also calls upon the driver to zero the position when needed. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & is the name associated the with the task\+Encoder in main. \\
+\hline
+{\em period} & is the frequency of which the task\+User is to be run. \\
+\hline
+{\em Position} & is the share of position from the touch panel \mbox{[}mm\mbox{]}. \\
+\hline
+\end{DoxyParams}

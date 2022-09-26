@@ -1,0 +1,55 @@
+\hypertarget{task_i_m_u_8py}{}\doxysection{src/task\+IMU.py File Reference}
+\label{task_i_m_u_8py}\index{src/taskIMU.py@{src/taskIMU.py}}
+
+
+The task that obtains roll, pitch, and heading data from the BNO055 IMU located on the balancing platform.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{task_i_m_u_8py_a7388305003e89eb54d5e10bf7a2a057d}{task\+IMU.\+task\+IMUFcn}} (task\+Name, period, Data, Velocity)
+\begin{DoxyCompactList}\small\item\em This function interacts with the driver to update the position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The task that obtains roll, pitch, and heading data from the BNO055 IMU located on the balancing platform. 
+
+This task communicates with the BNO055 driver to obtain values for the roll, pitch, and heading of the platform after calibration. The IMU data is interpreted and sent off as shares to the other tasks.
+
+\begin{DoxyAuthor}{Author}
+Jake Lesher 
+
+Daniel Xu 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02/16/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{task_i_m_u_8py_a7388305003e89eb54d5e10bf7a2a057d}\label{task_i_m_u_8py_a7388305003e89eb54d5e10bf7a2a057d}} 
+\index{taskIMU.py@{taskIMU.py}!taskIMUFcn@{taskIMUFcn}}
+\index{taskIMUFcn@{taskIMUFcn}!taskIMU.py@{taskIMU.py}}
+\doxysubsubsection{\texorpdfstring{taskIMUFcn()}{taskIMUFcn()}}
+{\footnotesize\ttfamily def task\+IMU.\+task\+IMUFcn (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{Data,  }\item[{}]{Velocity }\end{DoxyParamCaption})}
+
+
+
+This function interacts with the driver to update the position. 
+
+This function calls upon the driver the update the position of the encoder frequently so that the position can be accurately determined. In addition to updating the position, it also takes the positional and delta data from the driver. Furthermore, this function also calls upon the driver to zero the position when needed. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & is the name associated the with the task\+Encoder in main. \\
+\hline
+{\em period} & is the frequency of which the task\+User is to be run. \\
+\hline
+{\em z\+Flag} & is the shared variable that communicates the task\+User to determine whether the encoder should be zeroed or not. \\
+\hline
+{\em Data} & is the share of positional data in \mbox{[}rad\mbox{]}. \\
+\hline
+{\em Delta} & is the share of change in position data in \mbox{[}rad\mbox{]}. \\
+\hline
+{\em Velocity} & is the share of velocity data in \mbox{[}rad/s\mbox{]}. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,218 @@
+\hypertarget{class_b_n_o055_1_1_b_n_o055}{}\doxysection{BNO055.\+BNO055 Class Reference}
+\label{class_b_n_o055_1_1_b_n_o055}\index{BNO055.BNO055@{BNO055.BNO055}}
+
+
+A \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}} IMU driver class.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a9d0f1bc8db9bbcc124e3992466c3210e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, i2c)
+\begin{DoxyCompactList}\small\item\em Initializes the \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}} IMU ~\newline
+ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a1ab29c3fddb59fe51b0deaf9b0aa9c2c}{mode}} (self, modenum)
+\begin{DoxyCompactList}\small\item\em Sets the mode for IMU at which it will be operating in. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a0433272a8840f85f1fd216e733312a85}{status}} (self)
+\begin{DoxyCompactList}\small\item\em Identifies the calibration status of the IMU. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a78e44f05098ab8979ab2f2b980152556}{read\+\_\+coef}} (self)
+\begin{DoxyCompactList}\small\item\em Reads the calibration coefficients when the system is fully calibrated. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_ac905e0481fe92b0977142e32ed07497d}{write\+\_\+coef}} (self, cal\+\_\+coefs)
+\begin{DoxyCompactList}\small\item\em Writes existing calibration coefficients into the IMU ~\newline
+ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a0b6627d28fcbf6c829446ee9d8b38ce1}{read\+\_\+angle}} (self)
+\begin{DoxyCompactList}\small\item\em Reads the euler angle data from IMU and merges MSB and LSB ~\newline
+ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a8650bbf70808d78ea0d0ef710302a5ad}{read\+\_\+omega}} (self)
+\begin{DoxyCompactList}\small\item\em Reads the angular velocity data from IMU and merges MSB and LSB ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a8eebc88bf7ecfe69323da2b089911508}\label{class_b_n_o055_1_1_b_n_o055_a8eebc88bf7ecfe69323da2b089911508}} 
+{\bfseries i2c}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a40fc92f942712a693aae52eb5dc46f4a}\label{class_b_n_o055_1_1_b_n_o055_a40fc92f942712a693aae52eb5dc46f4a}} 
+{\bfseries addr}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a1d5ffe9e038e54d0bff6405a86f5fe4d}\label{class_b_n_o055_1_1_b_n_o055_a1d5ffe9e038e54d0bff6405a86f5fe4d}} 
+{\bfseries cal\+\_\+coef}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a627417f1a1e2a6a60a5842cb38680727}\label{class_b_n_o055_1_1_b_n_o055_a627417f1a1e2a6a60a5842cb38680727}} 
+{\bfseries calbuff}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a10d81dda58cbfa0f9a61f62016937d99}\label{class_b_n_o055_1_1_b_n_o055_a10d81dda58cbfa0f9a61f62016937d99}} 
+{\bfseries OPR\+\_\+\+MODE}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a039d5a6524efdebfc7280787dd8c2d1d}\label{class_b_n_o055_1_1_b_n_o055_a039d5a6524efdebfc7280787dd8c2d1d}} 
+{\bfseries config\+\_\+mode}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_ac388ea65be7c33b510836b47bf2b1e99}\label{class_b_n_o055_1_1_b_n_o055_ac388ea65be7c33b510836b47bf2b1e99}} 
+{\bfseries NDo\+F\+\_\+mode}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a15786f5a63db81ff89cadfcd3ceb34b1}\label{class_b_n_o055_1_1_b_n_o055_a15786f5a63db81ff89cadfcd3ceb34b1}} 
+{\bfseries cal\+\_\+byte}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_ac0f89fcce8f9ab72bb09c3db2936a3a5}\label{class_b_n_o055_1_1_b_n_o055_ac0f89fcce8f9ab72bb09c3db2936a3a5}} 
+{\bfseries mag\+\_\+stat}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a8664a8d8a8db6fe84dc4e5a114312037}\label{class_b_n_o055_1_1_b_n_o055_a8664a8d8a8db6fe84dc4e5a114312037}} 
+{\bfseries acc\+\_\+stat}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a50fbe8800a99215a723e6fe114a3550c}\label{class_b_n_o055_1_1_b_n_o055_a50fbe8800a99215a723e6fe114a3550c}} 
+{\bfseries gyr\+\_\+stat}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a0e7faa3949d637e844ba2ac44a4e0274}\label{class_b_n_o055_1_1_b_n_o055_a0e7faa3949d637e844ba2ac44a4e0274}} 
+{\bfseries sys\+\_\+stat}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_af4130c0821891a7b99d3b42e25591f31}\label{class_b_n_o055_1_1_b_n_o055_af4130c0821891a7b99d3b42e25591f31}} 
+{\bfseries reg\+\_\+addr}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_ac93e72ae2c3f0c599c13fcad300f227b}\label{class_b_n_o055_1_1_b_n_o055_ac93e72ae2c3f0c599c13fcad300f227b}} 
+{\bfseries Heading}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a26bac648bb177894d8eae7320fbd90bf}\label{class_b_n_o055_1_1_b_n_o055_a26bac648bb177894d8eae7320fbd90bf}} 
+{\bfseries Roll}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_aef6efade43d5821b3997a77bc52a2f23}\label{class_b_n_o055_1_1_b_n_o055_aef6efade43d5821b3997a77bc52a2f23}} 
+{\bfseries Pitch}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a6c89a35c31715b4ef37ef869d12bf563}\label{class_b_n_o055_1_1_b_n_o055_a6c89a35c31715b4ef37ef869d12bf563}} 
+{\bfseries w\+\_\+y}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_af06f6040d0941eb9c312dc69ced97081}\label{class_b_n_o055_1_1_b_n_o055_af06f6040d0941eb9c312dc69ced97081}} 
+{\bfseries w\+\_\+x}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a841db195240b69e6e6f6e22584ec1a24}\label{class_b_n_o055_1_1_b_n_o055_a841db195240b69e6e6f6e22584ec1a24}} 
+{\bfseries w\+\_\+z}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}} IMU driver class. 
+
+Objects of this class can be used to configure the \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}} IMU. IMU objects created from this class are able be read data from the IMU using I2C. This includes calibration data, euler angles, and angular velocity. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a9d0f1bc8db9bbcc124e3992466c3210e}\label{class_b_n_o055_1_1_b_n_o055_a9d0f1bc8db9bbcc124e3992466c3210e}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{i2c }\end{DoxyParamCaption})}
+
+
+
+Initializes the \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}} IMU ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i2c} & The I2C controller object that is associated with the IMU \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a1ab29c3fddb59fe51b0deaf9b0aa9c2c}\label{class_b_n_o055_1_1_b_n_o055_a1ab29c3fddb59fe51b0deaf9b0aa9c2c}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!mode@{mode}}
+\index{mode@{mode}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{mode()}{mode()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+mode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{modenum }\end{DoxyParamCaption})}
+
+
+
+Sets the mode for IMU at which it will be operating in. 
+
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em modenum} & will be set to 0 for config mode and 1 for NDoF mode. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a0b6627d28fcbf6c829446ee9d8b38ce1}\label{class_b_n_o055_1_1_b_n_o055_a0b6627d28fcbf6c829446ee9d8b38ce1}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!read\_angle@{read\_angle}}
+\index{read\_angle@{read\_angle}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{read\_angle()}{read\_angle()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+read\+\_\+angle (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reads the euler angle data from IMU and merges MSB and LSB ~\newline
+ 
+
+\begin{DoxyReturn}{Returns}
+(self.\+Roll, self.\+Pitch, self.\+Heading) Tuple of Euler Angles ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a78e44f05098ab8979ab2f2b980152556}\label{class_b_n_o055_1_1_b_n_o055_a78e44f05098ab8979ab2f2b980152556}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!read\_coef@{read\_coef}}
+\index{read\_coef@{read\_coef}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{read\_coef()}{read\_coef()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+read\+\_\+coef (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reads the calibration coefficients when the system is fully calibrated. 
+
+~\newline
+ \begin{DoxyReturn}{Returns}
+self.\+cal\+\_\+coef The calibration coefficients of the IMU. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a8650bbf70808d78ea0d0ef710302a5ad}\label{class_b_n_o055_1_1_b_n_o055_a8650bbf70808d78ea0d0ef710302a5ad}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!read\_omega@{read\_omega}}
+\index{read\_omega@{read\_omega}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{read\_omega()}{read\_omega()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+read\+\_\+omega (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reads the angular velocity data from IMU and merges MSB and LSB ~\newline
+ 
+
+\begin{DoxyReturn}{Returns}
+(self.\+w\+\_\+x,self.\+w\+\_\+y,self.\+w\+\_\+z) Tuple of angular velocity ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a0433272a8840f85f1fd216e733312a85}\label{class_b_n_o055_1_1_b_n_o055_a0433272a8840f85f1fd216e733312a85}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!status@{status}}
+\index{status@{status}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+status (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Identifies the calibration status of the IMU. 
+
+This function reads the calibration states from the IMU. It returns a 3 if the sensor is calibrated. \begin{DoxyReturn}{Returns}
+self.\+mag\+\_\+stat Calibration status of magnetometer 
+
+self.\+acc\+\_\+stat Calibration status of the accelerometer 
+
+self.\+gyr\+\_\+stat Calibration status of the gyroscope 
+
+self.\+sys\+\_\+stat Calibration statuse of the system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_ac905e0481fe92b0977142e32ed07497d}\label{class_b_n_o055_1_1_b_n_o055_ac905e0481fe92b0977142e32ed07497d}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!write\_coef@{write\_coef}}
+\index{write\_coef@{write\_coef}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{write\_coef()}{write\_coef()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+write\+\_\+coef (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cal\+\_\+coefs }\end{DoxyParamCaption})}
+
+
+
+Writes existing calibration coefficients into the IMU ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cal\+\_\+coefs} & The calibration coefficients from previous calibrations ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_b_n_o055_8py}{BNO055.\+py}}\end{DoxyCompactItemize}

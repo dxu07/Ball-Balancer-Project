@@ -1,0 +1,38 @@
+\hypertarget{index_sec_intro}{}\doxysection{Introduction}\label{index_sec_intro}
+The ME 305 final project relies on the use of 11 files that work in tandem to balance a ball on a tilting platform. These micropython files are flashed onto a Nucleo STM32 microcontroller, which acts as the controller for this dynamic system. The controller uses information from the BNO055 IMU to keep track of the x and y angles of the platform, while also using a resistive touchpanel to know the x and y position of the ball. With this information, the controller is able to calculate the appropriate duty cycles for each motor at any point in time so that that ball stays as close to the center of the platform as possible.\hypertarget{index_sec_demo}{}\doxysection{Demonstration of Ball-\/\+Balancing}\label{index_sec_demo}
+The following video shows a demonstration of our platform in closed-\/loop control mode as it balances a steel ball. We were able to tune our cascaded controllers through a long process of guessing and checking. After some time, we were able to find gain values that can keep the ball balanced for over a minute.
+
+\hypertarget{index_sec_files}{}\doxysection{Files in the Final Project}\label{index_sec_files}
+Considering a file hierarchy consisting of 3 layers, \mbox{\hyperlink{main_8py}{main.\+py}} and \mbox{\hyperlink{shares_8py}{shares.\+py}} make up the high level layer. This layer instantiates objects and runs tasks. The middle layer is made up our our four tasks\+: \mbox{\hyperlink{task_user_8py}{task\+User.\+py}}, \mbox{\hyperlink{task_i_m_u_8py}{task\+IMU.\+py}}, \mbox{\hyperlink{task_panel_8py}{task\+Panel.\+py}}, \mbox{\hyperlink{task_controller_8py}{task\+Controller.\+py}} and \mbox{\hyperlink{task_motor_8py}{task\+Motor.\+py}} which run sequentially, each with a period of 0.\+01 \mbox{[}s\mbox{]}. The bottom layer is the driver layer which consists of the drivers\+: \mbox{\hyperlink{_b_n_o055_8py}{BNO055.\+py}}, \mbox{\hyperlink{motor_8py}{motor.\+py}}, \mbox{\hyperlink{touchpanel_8py}{touchpanel.\+py}}, and \mbox{\hyperlink{_closed_loop_8py}{Closed\+Loop.\+py}}. Each of these drivers is designed to be reusable, controlling only the most basic functionality of each of the physical components they represent.\hypertarget{index_sec_deliv}{}\doxysection{Final Lab Deliverables}\label{index_sec_deliv}
+To dive further into the specifics of this final project, some additional details are provided below.\hypertarget{index_sec_deliv1}{}\doxysubsection{Task Diagrams}\label{index_sec_deliv1}
+The following diagram shows how the 5 middle-\/tier task files interact with each other using shares. Each of the tasks in our program is run at the same frequency of 100 Hz.
+
+~\newline
+ \hypertarget{index_sec_deliv2}{}\doxysubsection{State Transition Diagrams}\label{index_sec_deliv2}
+The following state transition diagrams show how each of our 5 task files operates as a finite state machine.
+
+\hypertarget{index_sec_userint}{}\doxysection{User Interface}\label{index_sec_userint}
+The user interface we constructed for this lab is very simple, but it operates smoothly and allows for multiple types of user input. The image below shows the \char`\"{}platform                                 wizard\char`\"{} help menu that pops up when you first start up the microcontroller.
+
+\hypertarget{index_sec_UIvid}{}\doxysubsection{Video of UI}\label{index_sec_UIvid}
+The following video shows a quick demonstration of our simple user interface from within Pu\+TTY. This video demonstrates the functionality of each of the menu items in our \char`\"{}platform wizard\char`\"{} help menu.
+
+\hypertarget{index_sec_datavid}{}\doxysubsection{Video of Data Recording}\label{index_sec_datavid}
+The following video shows that the ball\textquotesingle{}s position data and the platform\textquotesingle{}s angular orientation are recorded over a 10 second period after the \char`\"{}\+G\char`\"{} key is pressed. This data is printed into Pu\+TTY, where we can copy it over to Excel to plot later on.
+
+\hypertarget{index_sec_recdata}{}\doxysubsection{Recorded Data}\label{index_sec_recdata}
+After taking the data printed to our serial interface (Pu\+TTY), we generated the following plots to show the performance of our balancing platform. The data used in these plots is from the same trial seen in the video shown above. It can be seen that all of the plots oscillate near or around zero. It can also be seen that the ball\textquotesingle{}s x position is trailing the Y-\/angle while the y position trails the x angle.
+
+
+
+\begin{DoxyAuthor}{Author}
+Daniel Xu 
+
+Jake Lesher
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+License Info 
+\end{DoxyCopyright}
+\begin{DoxyDate}{Date}
+March 3, 2022 
+\end{DoxyDate}
