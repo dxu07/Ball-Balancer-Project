@@ -10,8 +10,6 @@
                 purpose of the driver is to read the data from the IMU. The 
                 Euler Angles and angular velocites are read from here. 
     
-                The source code can be found at my repository under "Final Lab":
-                https://bitbucket.org/jakelesher/me-305-labs
                 
     @author     Jake Lesher
     @author     Daniel Xu
